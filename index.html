@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
     <title>Simi 听力播放器</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -326,7 +327,11 @@
       <footer>宝民小学二四班 Simi 创意</footer>
     </main>
 
-    <audio id="audioPlayer" preload="metadata"></audio>
+    <audio
+      id="audioPlayer"
+      preload="metadata"
+      referrerpolicy="no-referrer"
+    ></audio>
 
     <script>
       const audio = document.getElementById("audioPlayer");
